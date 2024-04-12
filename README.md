@@ -17,4 +17,5 @@ That is, a list of all the reviews the particular user has made
 To store the list of reviews, I used the localStorage method as I think using a database for this might seem like an overkill
 I also didn't use TypeScript because I wanted to make the project as simple as possible
 The app has a light and dark mode version
+The app is hosted on https://abdqudus-area-finder.vercel.app
 
