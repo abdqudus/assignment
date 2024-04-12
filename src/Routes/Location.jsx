@@ -1,11 +1,11 @@
 import { Link, useParams, Outlet } from "react-router-dom"
-import NoReview from './NoReview'
+import NoReview from '../components/NoReview'
 import { tags } from "../data"
-import ChildNav from "./ChildNav"
-import Reviews from "./Reviews"
+import ChildNav from "../components/ChildNav"
+import Reviews from "../components/Reviews"
 import { useState } from "react"
 
-const Child = () => {
+const Location = () => {
 
     const { place } = useParams()
     const places = JSON.parse(localStorage.getItem('places'))
@@ -63,4 +63,4 @@ const Child = () => {
     )
 }
 
-export default Child
+export default Location

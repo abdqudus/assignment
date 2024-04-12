@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from './Header'
-import UserReview from './UserReview'
-import SideBar from './SideBar'
+import Header from '../components/Header'
+import UserReview from '../components/UserReview'
+import SideBar from '../components/SideBar'
 
 const UserReviews = () => {
     const userReviews = JSON.parse(localStorage.getItem('user-reviews'))

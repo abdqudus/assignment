@@ -2,8 +2,8 @@ import { useParams } from 'react-router-dom'
 
 import { useState } from 'react'
 
-import Success from './Success';
-import ReviewInterface from './ReviewInterface';
+import Success from '../components/Success';
+import ReviewInterface from '../components/ReviewInterface';
 const ReviewLocation = () => {
     const { place } = useParams()
     const [rating, setRating] = useState(0)

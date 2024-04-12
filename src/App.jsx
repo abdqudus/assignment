@@ -1,10 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Home from "./components/Home"
-import Child from "./components/Child"
-import MainPage from "./components/MainPage"
-import UserReviews from "./components/UserReviews"
+import Home from "./Routes/Home"
+import Child from "./Routes/Location"
+import MainPage from "./Routes/MainPage"
+import UserReviews from "./Routes/UserReviews"
 import { userReviews } from "./data"
-import ReviewLocation from "./components/ReviewLocation"
+import ReviewLocation from "./Routes/ReviewLocation"
+import Location from "./Routes/Location"
 const App = () => {
   if (!localStorage.getItem('user-reviews')) {
     localStorage.setItem('user-reviews', JSON.stringify(userReviews))
@@ -17,7 +18,7 @@ const App = () => {
         <Route path="/" element={<MainPage />} >
           <Route index element={<Home />} />
           <Route path="location/:place"  >
-            <Route index element={<Child />} />
+            <Route index element={<Location />} />
             <Route path="review" element={<ReviewLocation />} />
 
           </Route>

@@ -1,10 +1,10 @@
 import { useState } from "react"
-import Card from "./Card"
+import Card from "../components/Card"
 import { places } from "../data"
 import { Link } from "react-router-dom"
-import Form from "./Form"
-import Input from "./Input"
-import Header from "./Header"
+import Form from "../components/Form"
+import Input from "../components/Input"
+import Header from "../components/Header"
 
 const Home = () => {
 
