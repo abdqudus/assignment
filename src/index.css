@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+  }
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #f3f7fe inset !important;
+}
+.mask {
+  -webkit-mask: linear-gradient(
+    180deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+
+  mask: linear-gradient(180deg, transparent, white 50%, white 80%, transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #242428 inset !important;
+    -webkit-text-fill-color: #999999 !important;
+  }
+}
